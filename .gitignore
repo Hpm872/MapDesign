@@ -1,0 +1,31 @@
+# === UNITY - Archivos ignorados ===
+
+# Carpetas generadas automáticamente por Unity (NO subir)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+.vs/
+
+# Archivos de Visual Studio y Rider
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.pidb
+*.booproj
+
+# Cachés y archivos temporales del sistema
+*.DS_Store         (Mac)
+Thumbs.db          (Windows)
+
+# Archivos de compilación
+[Cc]rash[Rr]eporter/
+ExportedObj/
+*.apk
+*.aab
+*.unitypackage
