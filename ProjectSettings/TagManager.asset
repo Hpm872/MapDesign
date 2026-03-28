@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - LevelExit
+  - Checkpoint
+  - LevelManager
+  - PlayerSpawn
   layers:
   - Default
   - TransparentFX
@@ -52,6 +56,9 @@ TagManager:
     locked: 0
   - name: Objects
     uniqueID: 1473213471
+    locked: 0
+  - name: UI
+    uniqueID: 240729245
     locked: 0
   m_RenderingLayers:
   - Default
