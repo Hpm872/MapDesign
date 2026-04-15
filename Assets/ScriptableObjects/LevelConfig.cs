@@ -1,7 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "LevelConfig",
-menuName = "DungeonLabyrinth/Level Config")]
+[CreateAssetMenu(fileName = "LevelConfig", menuName = "DungeonLabyrinth/Level Config")]
 public class LevelConfig : ScriptableObject
 {
     [Header("Identificacion")]
