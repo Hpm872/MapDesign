@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2679ee67ee4ca7844b8949facfdcaeac, type: 3}
-  m_Name: LevelConfig
+  m_Script: {fileID: 11500000, guid: 1ac70ce71f666474c80de99d1dffdaef, type: 3}
+  m_Name: LevelConfig_1
   m_EditorClassIdentifier: Assembly-CSharp::LevelConfig
-  levelName: 
-  levelNumber: 0
-  tilemapPrefab: {fileID: 0}
-  nextLevel: {fileID: 0}
+  levelName: Lv1
+  levelNumber: 1
+  tilemapPrefab: {fileID: 3752595494655253335, guid: cfb08d66cc2c5884a832a5e2ec9553cf, type: 3}
+  nextLevel: {fileID: 11400000, guid: 989e72c3692ebe24abe55a3d4de59ad3, type: 2}
