@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelConfig
   levelName: Lv1
   levelNumber: 1
-  tilemapPrefab: {fileID: 3752595494655253335, guid: cfb08d66cc2c5884a832a5e2ec9553cf, type: 3}
+  tilemapPrefab: {fileID: 2071304291111398877, guid: cfb08d66cc2c5884a832a5e2ec9553cf, type: 3}
   nextLevel: {fileID: 11400000, guid: 989e72c3692ebe24abe55a3d4de59ad3, type: 2}
