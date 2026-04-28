@@ -1,4 +1,6 @@
+using Unity.Cinemachine;
 using UnityEngine;
+
 public class LevelManager : MonoBehaviour
 {
     // Singleton: solo existe UN LevelManager
@@ -6,6 +8,8 @@ public class LevelManager : MonoBehaviour
 
     [Header("Configuracion")]
     public LevelConfig startingLevel;
+    public CinemachineCamera cinemachineCamera;
+    private CinemachineConfiner2D confiner;
     private LevelConfig currentConfig;
     private GameObject currentLevelInstance;
 
@@ -24,6 +28,7 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
+        confiner = cinemachineCamera.GetComponent<CinemachineConfiner2D>();
         LoadLevel(startingLevel);
     }
 
@@ -46,9 +51,17 @@ public class LevelManager : MonoBehaviour
         // 3. Mover al jugador al spawn point
         var player = GameObject.FindWithTag("Player");
         var spawnPoint = GameObject.FindWithTag("PlayerSpawn");
-
+        
         if (player != null && spawnPoint != null)
             player.transform.position = spawnPoint.transform.position;
+
+
+        Collider2D cameraConfiner = GameObject.FindWithTag("CameraConfiner").GetComponent<PolygonCollider2D>();
+        if (confiner != null && cameraConfiner != null)
+        {
+            confiner.BoundingShape2D = cameraConfiner;
+            confiner.InvalidateBoundingShapeCache();
+        }
 
         Debug.Log("Nivel cargado: " + config.levelName);
     }
