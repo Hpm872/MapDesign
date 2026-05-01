@@ -1655,7 +1655,7 @@ Transform:
   m_GameObject: {fileID: 1382335780710632144}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5835, y: 0.7005, z: 0}
+  m_LocalPosition: {x: -16.1, y: 0.7005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4066,6 +4066,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3298026453548807031}
   - component: {fileID: 483155076274223916}
+  - component: {fileID: 4485051658900650835}
   m_Layer: 0
   m_Name: LevelExit
   m_TagString: LevelExit
@@ -4134,6 +4135,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4485051658900650835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2934988008705335278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6cd8670bc33e2d4b940a94da7edf3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelExit
 --- !u!1 &3019995488616263146
 GameObject:
   m_ObjectHideFlags: 0
@@ -34289,7 +34302,7 @@ GameObject:
   - component: {fileID: 9023907741068719096}
   m_Layer: 0
   m_Name: Checkpoint
-  m_TagString: Untagged
+  m_TagString: Checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35010,7 +35023,7 @@ GameObject:
   - component: {fileID: 8889677857413860506}
   m_Layer: 0
   m_Name: Camera Confiner
-  m_TagString: Untagged
+  m_TagString: CameraConfiner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

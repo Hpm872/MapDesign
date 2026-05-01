@@ -772,7 +772,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2060853127}
-  - component: {fileID: 2060853126}
+  - component: {fileID: 2060853128}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -780,20 +780,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2060853126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2060853125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6b9e8d136a2b9347b3bf7a40e95b000, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LevelManager
-  startingLevel: {fileID: 11400000, guid: 28c344772ef84704d8c2f16f2f062dad, type: 2}
-  cinemachineCamera: {fileID: 1949871439}
 --- !u!4 &2060853127
 Transform:
   m_ObjectHideFlags: 0
@@ -809,6 +795,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2060853128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060853125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e89ff1aeb3e33840b7f45cd19de911c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ManagerTest
+  startingLevel: {fileID: 11400000, guid: 28c344772ef84704d8c2f16f2f062dad, type: 2}
+  cinemachineCamera: {fileID: 1949871439}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ public class LevelExit : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            LevelManager.Instance.GoToNextLevel();
+            ManagerTest.Instance.GoToNextLevel();
         }
     }
 }

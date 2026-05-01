@@ -62198,7 +62198,7 @@ Transform:
   m_GameObject: {fileID: 1877377955413396221}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -30.3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -64239,7 +64239,7 @@ GameObject:
   - component: {fileID: 372508935438645957}
   m_Layer: 0
   m_Name: LevelExit
-  m_TagString: Untagged
+  m_TagString: LevelExit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66872,7 +66872,7 @@ GameObject:
   - component: {fileID: 3475281084053130594}
   m_Layer: 0
   m_Name: CameraConfiner
-  m_TagString: Untagged
+  m_TagString: CameraConfiner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92147,7 +92147,7 @@ GameObject:
   - component: {fileID: 8436162204143670498}
   m_Layer: 0
   m_Name: PlayerSpawn
-  m_TagString: Untagged
+  m_TagString: PlayerSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92161,7 +92161,7 @@ Transform:
   m_GameObject: {fileID: 3493514529584039780}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.77, y: 0.22, z: 0}
+  m_LocalPosition: {x: 27.82, y: 0.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97430,7 +97430,7 @@ GameObject:
   - component: {fileID: 1072241175740760961}
   m_Layer: 0
   m_Name: Checkpoint
-  m_TagString: Untagged
+  m_TagString: Checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -55,7 +55,7 @@ public class LevelManager : MonoBehaviour
         if (player != null && spawnPoint != null)
             player.transform.position = spawnPoint.transform.position;
 
-
+        // 4. Cambiar el collider2D de la Cinemachine Camera
         Collider2D cameraConfiner = GameObject.FindWithTag("CameraConfiner").GetComponent<PolygonCollider2D>();
         if (confiner != null && cameraConfiner != null)
         {
