@@ -806,7 +806,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e89ff1aeb3e33840b7f45cd19de911c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ManagerTest
+  m_EditorClassIdentifier: Assembly-CSharp::LevelManager
   startingLevel: {fileID: 11400000, guid: 28c344772ef84704d8c2f16f2f062dad, type: 2}
   cinemachineCamera: {fileID: 1949871439}
 --- !u!1660057539 &9223372036854775807

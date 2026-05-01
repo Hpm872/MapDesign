@@ -1,9 +1,9 @@
-using Unity.Cinemachine;
 using UnityEngine;
+using System.Collections;
+using Unity.Cinemachine;
 
 public class LevelManager : MonoBehaviour
 {
-    // Singleton: solo existe UN LevelManager
     public static LevelManager Instance;
 
     [Header("Configuracion")]
@@ -18,6 +18,7 @@ public class LevelManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -28,6 +29,7 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
+        Checkpoint.hasCheckpoint = false;
         confiner = cinemachineCamera.GetComponent<CinemachineConfiner2D>();
         LoadLevel(startingLevel);
     }
@@ -36,35 +38,76 @@ public class LevelManager : MonoBehaviour
     {
         if (config == null)
         {
-            Debug.Log("No hay mas niveles.");
+            Debug.Log("No hay mas niveles. Fin del juego.");
             return;
         }
 
-        // 1. Destruir el nivel anterior
         if (currentLevelInstance != null)
             Destroy(currentLevelInstance);
 
-        // 2. Instanciar el nuevo nivel
         currentConfig = config;
         currentLevelInstance = Instantiate(config.tilemapPrefab);
 
-        // 3. Mover al jugador al spawn point
-        var player = GameObject.FindWithTag("Player");
-        var spawnPoint = GameObject.FindWithTag("PlayerSpawn");
-        
-        if (player != null && spawnPoint != null)
-            player.transform.position = spawnPoint.transform.position;
+        StartCoroutine(MovePlayerAfterLoad());
+    }
 
-        // 4. Cambiar el collider2D de la Cinemachine Camera
-        Collider2D cameraConfiner = GameObject.FindWithTag("CameraConfiner").GetComponent<PolygonCollider2D>();
+    private IEnumerator MovePlayerAfterLoad()
+    {
+        yield return null;
+
+        var player = GameObject.FindWithTag("Player");
+
+        if (player == null)
+        {
+            Debug.LogWarning("LevelManager: No se encontro objeto con tag 'Player'. " +
+                             "Verifica que el jugador existe en la escena y tiene el tag asignado.");
+            yield break;
+        }
+
+        var rb = player.GetComponent<Rigidbody2D>();
+        if (rb != null)
+            rb.linearVelocity = Vector2.zero;
+
+        if (Checkpoint.hasCheckpoint)
+        {
+            player.transform.position = Checkpoint.lastCheckpointPosition;
+        }
+        else
+        {
+            var spawn = GameObject.FindWithTag("PlayerSpawn");
+            if (spawn != null)
+            {
+                player.transform.position = spawn.transform.position;
+            }
+            else
+            {
+                Debug.LogWarning("LevelManager: No se encontro 'PlayerSpawn' en el nivel '" +
+                                 currentConfig.levelName + "'. " +
+                                 "Verifica que el objeto PlayerSpawn existe dentro del Prefab " +
+                                 "y tiene el tag PlayerSpawn asignado.");
+            }
+        }
+
+        var cameraConfinerObject = GameObject.FindWithTag("CameraConfiner");
+        if (cameraConfinerObject == null)
+        {
+            Debug.LogWarning("Objeto de confiner no se pudo encontrar");
+        }
+
+        var cameraConfiner = cameraConfinerObject.GetComponent<PolygonCollider2D>();
         if (confiner != null && cameraConfiner != null)
         {
             confiner.BoundingShape2D = cameraConfiner;
             confiner.InvalidateBoundingShapeCache();
+        } 
+        else
+        {
+            Debug.LogWarning("No se pudo encontrar el confiner");
         }
 
-        Debug.Log("Nivel cargado: " + config.levelName);
+        Debug.Log("Nivel cargado: " + currentConfig.levelName);
     }
+
     public void GoToNextLevel()
     {
         LoadLevel(currentConfig.nextLevel);
