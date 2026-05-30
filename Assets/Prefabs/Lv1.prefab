@@ -25,13 +25,13 @@ Transform:
   m_GameObject: {fileID: 648464173041526644}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.7378402, y: -2.7419958, z: 0}
+  m_LocalPosition: {x: 15.381941, y: -5.11731, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1161823109729442907}
   - {fileID: 6003317114403561262}
-  m_Father: {fileID: 3644040785880160203}
+  m_Father: {fileID: 5733497531412531968}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &661565830469060412
 GameObject:
@@ -1823,7 +1823,7 @@ Transform:
   - {fileID: 4947308560460640677}
   - {fileID: 1860775311658912336}
   - {fileID: 925578597588715907}
-  - {fileID: 2172058737957149845}
+  - {fileID: 5733497531412531968}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3649094759308352068
@@ -12092,6 +12092,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Checkpoint
   spritei: {fileID: 0}
   activatedColor: {r: 0.41960785, g: 0.96862745, b: 1, a: 1}
+--- !u!1 &4955879178588160658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5733497531412531968}
+  m_Layer: 0
+  m_Name: Enemies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5733497531412531968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4955879178588160658}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.6441, y: 2.3753142, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2172058737957149845}
+  - {fileID: 2276730195741883759}
+  m_Father: {fileID: 3644040785880160203}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5027878272823344015
 GameObject:
   m_ObjectHideFlags: 0
@@ -12207,6 +12240,38 @@ PolygonCollider2D:
       - {x: 25.276566, y: -21.604582}
       - {x: 24.725681, y: 17.69952}
   m_UseDelaunayMesh: 1
+--- !u!1 &5861544928865763983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2276730195741883759}
+  m_Layer: 0
+  m_Name: WaiterEnemies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2276730195741883759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5861544928865763983}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 36059712862261499}
+  m_Father: {fileID: 5733497531412531968}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6079143246730438377
 GameObject:
   m_ObjectHideFlags: 0
@@ -34601,6 +34666,80 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8719879628964691716, guid: e9dbf7bc80695d24b9a487ed47538000, type: 3}
   m_PrefabInstance: {fileID: 1203885270886061078}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1693382357209756732
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2276730195741883759}
+    m_Modifications:
+    - target: {fileID: 1114360401764698229, guid: db3a92c858759dd45b1e2b96d1677bea, type: 3}
+      propertyPath: m_Name
+      value: Waiter1_Sprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657331629472687303, guid: db3a92c858759dd45b1e2b96d1677bea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657331629472687303, guid: db3a92c858759dd45b1e2b96d1677bea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657331629472687303, guid: db3a92c858759dd45b1e2b96d1677bea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657331629472687303, guid: db3a92c858759dd45b1e2b96d1677bea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657331629472687303, guid: db3a92c858759dd45b1e2b96d1677bea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657331629472687303, guid: db3a92c858759dd45b1e2b96d1677bea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657331629472687303, guid: db3a92c858759dd45b1e2b96d1677bea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657331629472687303, guid: db3a92c858759dd45b1e2b96d1677bea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657331629472687303, guid: db3a92c858759dd45b1e2b96d1677bea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657331629472687303, guid: db3a92c858759dd45b1e2b96d1677bea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796464561620136486, guid: db3a92c858759dd45b1e2b96d1677bea, type: 3}
+      propertyPath: m_Name
+      value: wPointA_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860983798482768920, guid: db3a92c858759dd45b1e2b96d1677bea, type: 3}
+      propertyPath: m_Name
+      value: Waiter1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9079896617327710960, guid: db3a92c858759dd45b1e2b96d1677bea, type: 3}
+      propertyPath: m_Name
+      value: wPointB_1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: db3a92c858759dd45b1e2b96d1677bea, type: 3}
+--- !u!4 &36059712862261499 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1657331629472687303, guid: db3a92c858759dd45b1e2b96d1677bea, type: 3}
+  m_PrefabInstance: {fileID: 1693382357209756732}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3768515216092618030
 PrefabInstance:

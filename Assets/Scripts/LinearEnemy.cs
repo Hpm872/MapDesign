@@ -7,14 +7,13 @@ public class LinearEnemy : MonoBehaviour
     public Transform waypointB;
 
     [Header("Movement")]
-    public float moveSpeed = 2f;
+    public float moveSpeed = 4f;
     public float arrivalRadius = 0.15f;
 
     [Header("Damage")]
     public int damageAmount = 1;
 
     private bool goingToB = true;
-    
     private Rigidbody2D rb;
     private SpriteRenderer sr;
 
