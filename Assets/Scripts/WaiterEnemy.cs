@@ -33,22 +33,23 @@ public class WaiterEnemy : MonoBehaviour
     void FixedUpdate()
     {
         if (waypointA == null || waypointB == null) return;
-
+       
         if (isWaiting)
         {
-            rb.linearVelocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero; 
             waitTimer -= Time.fixedDeltaTime;
 
             if (waitTimer <= 0f)
             {
                 isWaiting = false;
-                goingToB = !goingToB;
+                goingToB = !goingToB; 
             }
+            
+            return;
         }
 
         Transform destination = goingToB ? waypointB : waypointA;
-        Vector2 dir = ((Vector2)destination.position * (Vector2)transform.position).normalized;
-        // rb.MovePosition(rb.position + dir * moveSpeed * Time.fixedDeltaTime);
+        Vector2 dir = ((Vector2)destination.position - (Vector2)transform.position).normalized;
         rb.linearVelocity = dir * moveSpeed;
 
         float dist = Vector2.Distance(transform.position, destination.position);
