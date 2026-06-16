@@ -3,15 +3,15 @@ using UnityEngine;
 public class RoadEnemy : MonoBehaviour
 {
     // ------ Variables Publicas ---------
-    // Ruta
+    [Header("Route")]
     public Transform [] waypoints;
 
-    // Movimiento
+    [Header("Movement")]
     public float moveSpeed = 4f;
     public float arrivalRadius = 0.15f;
     public float waitTime = 1.5f;
 
-    // Daño
+    [Header("Damage")]
     public int damageAmount = 1;
 
     // ------ Variables Privadas ---------

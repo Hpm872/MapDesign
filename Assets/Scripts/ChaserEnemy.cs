@@ -3,16 +3,16 @@ using UnityEngine;
 public class ChaserEnemy : MonoBehaviour
 {
     // ------ Variables Publicas ---------
-    // Detección
+    [Header("Detection")]
     public float detectionRadius = 5f;
     public float loseRadius = 8f;
     public LayerMask playerLayer;
 
-    // Movimiento
+    [Header("Movement")]
     public float chaseSpeed = 4f;
     public float returnSpeed = 2f;
 
-    // Daño
+    [Header("Damage")]
     public int damageAmount = 1;
 
     // ------ Variables Privadas ---------
