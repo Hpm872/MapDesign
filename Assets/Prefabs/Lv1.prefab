@@ -12092,6 +12092,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Checkpoint
   spritei: {fileID: 3479578676954938961}
   activatedColor: {r: 0.41960785, g: 0.96862745, b: 1, a: 1}
+--- !u!1 &3920056034521020702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 512939828711374045}
+  m_Layer: 0
+  m_Name: ChaserEnemies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &512939828711374045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3920056034521020702}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6653353943786207363}
+  m_Father: {fileID: 5733497531412531968}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4955879178588160658
 GameObject:
   m_ObjectHideFlags: 0
@@ -12124,6 +12156,7 @@ Transform:
   - {fileID: 2172058737957149845}
   - {fileID: 2276730195741883759}
   - {fileID: 7079481381161606388}
+  - {fileID: 512939828711374045}
   m_Father: {fileID: 3644040785880160203}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5027878272823344015
@@ -34914,9 +34947,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7079481381161606388}
     m_Modifications:
+    - target: {fileID: 1360174110494076224, guid: 7a5354ecb2d7e7e4da287c0ba6351b77, type: 3}
+      propertyPath: m_Name
+      value: Road1_Sprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332949394700379973, guid: 7a5354ecb2d7e7e4da287c0ba6351b77, type: 3}
+      propertyPath: m_Name
+      value: rPointA_1
+      objectReference: {fileID: 0}
     - target: {fileID: 4041595924104491252, guid: 7a5354ecb2d7e7e4da287c0ba6351b77, type: 3}
       propertyPath: m_Name
-      value: Road
+      value: Road1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755197842281355158, guid: 7a5354ecb2d7e7e4da287c0ba6351b77, type: 3}
+      propertyPath: m_Name
+      value: rPointC_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366683398949674973, guid: 7a5354ecb2d7e7e4da287c0ba6351b77, type: 3}
+      propertyPath: m_Name
+      value: rPointB_1
       objectReference: {fileID: 0}
     - target: {fileID: 8480587650107429349, guid: 7a5354ecb2d7e7e4da287c0ba6351b77, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35334,4 +35383,66 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3446047254934907934, guid: 7bb5b41778dcd91409fac6fd3ba8345b, type: 3}
   m_PrefabInstance: {fileID: 8971945216732230448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9010502060034650882
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 512939828711374045}
+    m_Modifications:
+    - target: {fileID: 2404585524839336833, guid: 0a2959dbb61b6274784a13026d0b4ed8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404585524839336833, guid: 0a2959dbb61b6274784a13026d0b4ed8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404585524839336833, guid: 0a2959dbb61b6274784a13026d0b4ed8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404585524839336833, guid: 0a2959dbb61b6274784a13026d0b4ed8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404585524839336833, guid: 0a2959dbb61b6274784a13026d0b4ed8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404585524839336833, guid: 0a2959dbb61b6274784a13026d0b4ed8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404585524839336833, guid: 0a2959dbb61b6274784a13026d0b4ed8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404585524839336833, guid: 0a2959dbb61b6274784a13026d0b4ed8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404585524839336833, guid: 0a2959dbb61b6274784a13026d0b4ed8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404585524839336833, guid: 0a2959dbb61b6274784a13026d0b4ed8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3689252484624844145, guid: 0a2959dbb61b6274784a13026d0b4ed8, type: 3}
+      propertyPath: m_Name
+      value: Chaser
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a2959dbb61b6274784a13026d0b4ed8, type: 3}
+--- !u!4 &6653353943786207363 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2404585524839336833, guid: 0a2959dbb61b6274784a13026d0b4ed8, type: 3}
+  m_PrefabInstance: {fileID: 9010502060034650882}
   m_PrefabAsset: {fileID: 0}
