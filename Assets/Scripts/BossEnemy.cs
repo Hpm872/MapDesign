@@ -43,7 +43,6 @@ public class BossEnemy : MonoBehaviour
         originPosition = transform.position;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         CheckForPlayer();
@@ -85,23 +84,65 @@ public class BossEnemy : MonoBehaviour
         }
     }
 
-    void MoveTowards(Vector2 a, float b)
-    {
-        
-    }
-
     void TickWait()
     {
-        
+        rb.linearVelocity = Vector2.zero;
+
+        waitTimer -= Time.fixedDeltaTime;
+        if (waitTimer <= 0f) currentState = State.Patrol;
     }
 
     void TickChase()
     {
-        
+        if (playerTarget == null) currentState = State.Return;
+
+        float dist = Vector2.Distance(transform.position, playerTarget.position);
+        if (dist > loseRadius)
+        {
+            playerTarget = null;
+            currentState = State.Return;
+            return;
+        }
+
+        MoveTowards(playerTarget.position, chaseSpeed);
     }
 
     void TickReturn()
     {
-        
+        float dist = Vector2.Distance(transform.position, originPosition);
+        if (dist < 0.1f)
+        {
+            rb.linearVelocity = Vector2.zero;
+            currentState = State.Wait;
+            return;
+        }
+
+        MoveTowards(originPosition, returnSpeed);
+    }
+    
+    void MoveTowards(Vector2 target, float speed)
+    {
+        Vector2 dir = (target - (Vector2)transform.position).normalized;
+        rb.linearVelocity = dir * speed;
+
+        if (dir.x > 0.01f) sr.flipX = false;
+        if (dir.x < -0.01f) sr.flipX = true;
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (!other.CompareTag("PLayer")) return;
+
+        var dmg = other.GetComponent<IDamageable>(); // Cambiar IDamageable por PlayerHealth luego
+        if (dmg != null) dmg.TakeDamage(damageAmount);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, detectionRadius);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, loseRadius);
     }
 }
