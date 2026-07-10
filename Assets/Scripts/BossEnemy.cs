@@ -84,4 +84,24 @@ public class BossEnemy : MonoBehaviour
             currentState = State.Wait;
         }
     }
+
+    void MoveTowards(Vector2 a, float b)
+    {
+        
+    }
+
+    void TickWait()
+    {
+        
+    }
+
+    void TickChase()
+    {
+        
+    }
+
+    void TickReturn()
+    {
+        
+    }
 }

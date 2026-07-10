@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 5277396743996430289}
   - component: {fileID: 4724731109078042671}
   - component: {fileID: 5144589612819359629}
-  - component: {fileID: 2603250820923700826}
+  - component: {fileID: 2084554390683528939}
   m_Layer: 3
   m_Name: Enemy1_Sprite
   m_TagString: Untagged
@@ -236,7 +236,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &2603250820923700826
+--- !u!114 &2084554390683528939
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
