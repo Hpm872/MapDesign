@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2055102311959635368}
   - component: {fileID: 5890802837618066405}
   - component: {fileID: 10145298200545765}
-  m_Layer: 20
+  m_Layer: 7
   m_Name: PF Props - Barrel 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.714, y: -0.805, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2055102312182832481}
@@ -184,7 +184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2055102312182832481}
   - component: {fileID: 2055102312182832480}
-  m_Layer: 20
+  m_Layer: 7
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

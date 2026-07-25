@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class BossEnemy : MonoBehaviour
 {
@@ -28,6 +26,10 @@ public class BossEnemy : MonoBehaviour
 
     [Header("Damage")]
     public int damageAmount = 1;
+
+    [Header("Wall Detection")]
+    public float detectionDistance = 0.5f;
+    public LayerMask wallLayer;
 
     [Header("Internal Components")]
     private Vector2 originPosition;
@@ -103,7 +105,7 @@ public class BossEnemy : MonoBehaviour
             currentState = State.Return;
             return;
         }
-
+        
         MoveTowards(playerTarget.position, chaseSpeed);
     }
 
@@ -131,10 +133,20 @@ public class BossEnemy : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (!other.CompareTag("PLayer")) return;
+        if (!other.CompareTag("Player")) return;
 
         var dmg = other.GetComponent<IDamageable>(); // Cambiar IDamageable por PlayerHealth luego
         if (dmg != null) dmg.TakeDamage(damageAmount);
+    }
+
+    bool IsWallNear()
+    {
+        Vector2 facingDirection = sr.flipX ? Vector2.left : Vector2.right;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, facingDirection, detectionDistance, wallLayer);
+
+        Debug.DrawRay(transform.position, facingDirection * detectionDistance, hit.collider != null ? Color.green : Color.red);
+
+        return hit.collider != null;
     }
 
     void OnDrawGizmosSelected()

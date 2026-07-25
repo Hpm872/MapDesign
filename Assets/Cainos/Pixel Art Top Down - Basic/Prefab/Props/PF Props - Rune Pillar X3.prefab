@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1360264394546084191}
   - component: {fileID: 1360264394546084184}
-  m_Layer: 20
+  m_Layer: 7
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 1360264394729772852}
   - component: {fileID: 1360264394729772854}
   - component: {fileID: 1360264394729772853}
-  m_Layer: 20
+  m_Layer: 7
   m_Name: PF Props - Rune Pillar X3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 1360264395099639755}
   - component: {fileID: 1360264395099639764}
   - component: {fileID: 2914919987300553047}
-  m_Layer: 20
+  m_Layer: 7
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
