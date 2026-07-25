@@ -110,6 +110,7 @@ public class LevelManager : MonoBehaviour
 
     public void GoToNextLevel()
     {
+        Checkpoint.hasCheckpoint = false;
         LoadLevel(currentConfig.nextLevel);
     }
 }
