@@ -1,7 +1,8 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class HealthSystem : MonoBehaviour//, IDamageable
+public class HealthSystem : MonoBehaviour, IDamageable
 {
     [Header("Public Variables")]
     public int maxHealth = 100;
@@ -26,6 +27,27 @@ public class HealthSystem : MonoBehaviour//, IDamageable
     // Update is called once per frame
     void Update()
     {
-        
+        if (invincibleTimer > 0f) invincibleTimer -= Time.deltaTime;
+    }
+
+    public void TakeDamage(int amount)
+    {
+        if (isInvincible) return;
+
+        currentHealth -= amount;
+        currentHealth = Mathf.Max(0, currentHealth);
+
+        invincibleTimer = invincibleTime;
+        onHealthChanged?.Invoke(currentHealth);
+
+        if (currentHealth <= 0) onDeath?.Invoke();
+    }
+
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Min(maxHealth, currentHealth);
+
+        onHealthChanged?.Invoke(currentHealth);
     }
 }
