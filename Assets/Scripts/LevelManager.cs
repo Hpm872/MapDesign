@@ -64,6 +64,8 @@ public class LevelManager : MonoBehaviour
             yield break;
         }
 
+        player.SetActive(true);
+
         var rb = player.GetComponent<Rigidbody2D>();
         if (rb != null)
             rb.linearVelocity = Vector2.zero;
@@ -88,6 +90,13 @@ public class LevelManager : MonoBehaviour
             }
         }
 
+        var playerHealth = player.GetComponent<HealthSystem>();
+        if (playerHealth != null)
+        {
+            playerHealth.currentHealth = playerHealth.maxHealth;
+            UIManager.Instance.UpdatePlayerHealth(playerHealth.currentHealth);
+        }
+
         var cameraConfinerObject = GameObject.FindWithTag("CameraConfiner");
         if (cameraConfinerObject == null)
         {
@@ -108,8 +117,16 @@ public class LevelManager : MonoBehaviour
         Debug.Log("Nivel cargado: " + currentConfig.levelName);
     }
 
+    public void RetryCurrentLevel()
+    {
+        if (UIManager.Instance.GameOverPanel != null) UIManager.Instance.GameOverPanel.SetActive(false);
+        Checkpoint.hasCheckpoint = false;
+        LoadLevel(currentConfig);
+    }
+
     public void GoToNextLevel()
     {
+        if (UIManager.Instance.VictoryPanel != null) UIManager.Instance.VictoryPanel.SetActive(false);
         Checkpoint.hasCheckpoint = false;
         LoadLevel(currentConfig.nextLevel);
     }

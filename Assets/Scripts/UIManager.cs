@@ -14,11 +14,9 @@ public class UIManager : MonoBehaviour
     public Image bossHealthFill;
     public int bossMaxHealth = 200;
 
-    /*
     [Header("Panels")]
     public GameObject GameOverPanel;
     public GameObject VictoryPanel;
-    */
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
