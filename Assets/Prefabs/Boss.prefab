@@ -173,9 +173,9 @@ GameObject:
   - component: {fileID: 1304732761124657615}
   - component: {fileID: 5418931824481798487}
   - component: {fileID: 6062876723679652139}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: The Mimic (Boss)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
