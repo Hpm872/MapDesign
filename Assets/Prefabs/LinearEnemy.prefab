@@ -383,7 +383,6 @@ GameObject:
   - component: {fileID: 5144589612819359629}
   - component: {fileID: 2084554390683528939}
   - component: {fileID: 3105993849011471837}
-  - component: {fileID: 8375002960915465337}
   m_Layer: 3
   m_Name: Enemy1_Sprite
   m_TagString: Enemy
@@ -593,19 +592,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   invincibleTime: 0
---- !u!114 &8375002960915465337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7497768005962106830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0da2b3e1aacbcf2419b705bbd8c6167d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
-  damageAmount: 5
 --- !u!1 &7703637918340694647
 GameObject:
   m_ObjectHideFlags: 0

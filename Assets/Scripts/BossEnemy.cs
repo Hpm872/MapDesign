@@ -131,11 +131,11 @@ public class BossEnemy : MonoBehaviour
         if (dir.x < -0.01f) sr.flipX = true;
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        if (!other.CompareTag("Player")) return;
+        if (!other.gameObject.CompareTag("Player")) return;
 
-        var dmg = other.GetComponent<IDamageable>(); // Cambiar IDamageable por PlayerHealth luego
+        var dmg = other.gameObject.GetComponent<HealthSystem>();
         if (dmg != null) dmg.TakeDamage(damageAmount);
     }
 

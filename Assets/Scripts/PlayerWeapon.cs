@@ -4,14 +4,18 @@ public class PlayerWeapon : MonoBehaviour
 {
     public int bumpDamage = 20;
    
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        IDamageable damageableObj = collision.gameObject.GetComponent<IDamageable>();
-
-        if (damageableObj != null && collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            damageableObj.TakeDamage(bumpDamage);
-            Debug.Log("¡El jugador chocó y lastimó al enemigo!");
+            HealthSystem enemyHealth = collision.gameObject.GetComponent<HealthSystem>();
+            if (enemyHealth == null) enemyHealth = collision.gameObject.GetComponentInParent<HealthSystem>();
+
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(bumpDamage);
+                Debug.Log("Daño al enemigo");
+            }
         }
     }
 }

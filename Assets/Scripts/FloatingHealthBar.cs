@@ -7,14 +7,11 @@ public class FloatingHealthBar : MonoBehaviour
     private int maxHealth;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         HealthSystem enemyHealthSystem = GetComponentInParent<HealthSystem>();
-
-        if (enemyHealthSystem != null)
-        {
-            maxHealth = enemyHealthSystem.maxHealth;
-        }
+        
+        if (enemyHealthSystem != null) maxHealth = enemyHealthSystem.maxHealth;
     }
 
     public void UpdateBar(int currentHealth)
