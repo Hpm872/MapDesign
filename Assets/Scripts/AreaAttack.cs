@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,12 +13,12 @@ public class AreaAttack : MonoBehaviour
 
     public float distanceFromPlayer = 0.5f;
 
-    private Collider2D hitCollider;
+    private CircleCollider2D hitCollider;
     private HashSet<HealthSystem> alreadyHit = new HashSet<HealthSystem>();
 
     void Awake()
     {
-        hitCollider = GetComponent<Collider2D>();
+        hitCollider = GetComponent<CircleCollider2D>();
         hitCollider.enabled = false;
     }
 
@@ -32,15 +33,40 @@ public class AreaAttack : MonoBehaviour
         Swing();
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Swing()
     {
-        
+        StopAllCoroutines();
+        StartCoroutine(SwingRoutine());
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator SwingRoutine() 
     {
-        
+        alreadyHit.Clear();
+        hitCollider.enabled = true;
+
+        yield return new WaitForSeconds(activeTime);
+
+        hitCollider.enabled = false;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!other.CompareTag("Enemy")) return;
+
+        HealthSystem enemyHealth = other.GetComponent<HealthSystem>();
+
+        if (enemyHealth == null || alreadyHit.Contains(enemyHealth)) return;
+        alreadyHit.Add(enemyHealth);
+
+        enemyHealth.TakeDamage(damage);
+        Debug.Log("Enemigo ha sido golpeado");
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (hitCollider == null) return;
+
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, hitCollider.radius);
     }
 }

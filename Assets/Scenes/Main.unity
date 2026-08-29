@@ -1067,6 +1067,7 @@ GameObject:
   - component: {fileID: 852365925}
   - component: {fileID: 852365926}
   - component: {fileID: 852365927}
+  - component: {fileID: 852365928}
   m_Layer: 6
   m_Name: AttackArea
   m_TagString: Untagged
@@ -1183,7 +1184,22 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.00000011920929}
-  m_Radius: 0.49999997
+  m_Radius: 0.5
+--- !u!114 &852365928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852365924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a37688db5c13a4b98d4b50d5f04c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AreaAttack
+  damage: 5
+  activeTime: 0.15
+  distanceFromPlayer: 0.5
 --- !u!1 &949425013
 GameObject:
   m_ObjectHideFlags: 0
@@ -3079,10 +3095,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2053430462}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c742a6e8e16f69c41a6ef8d5597c276f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ce35d1631304ab4a9b80a6e707c29ac, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerWeapon
-  bumpDamage: 20
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
+  attack: {fileID: 852365928}
+  gameCamera: {fileID: 519420031}
 --- !u!1 &2060853125
 GameObject:
   m_ObjectHideFlags: 0
