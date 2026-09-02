@@ -50,4 +50,12 @@ public class HealthSystem : MonoBehaviour, IDamageable
 
         onHealthChanged?.Invoke(currentHealth);
     }
+
+    public void ResetHealth()
+    {
+        currentHealth = maxHealth;
+
+        invincibleTimer = 0f;
+        onHealthChanged?.Invoke(currentHealth);
+    }
 }

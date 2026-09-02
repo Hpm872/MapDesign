@@ -38,10 +38,11 @@ public class LinearEnemy : MonoBehaviour
         if (dist < arrivalRadius) goingToB = !goingToB;
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        if (!other.CompareTag("Player")) return;
-        var dmg = other.GetComponent<IDamageable>();
+        if (!other.gameObject.CompareTag("Player")) return;
+
+        var dmg = other.gameObject.GetComponent<HealthSystem>();
         if (dmg != null) dmg.TakeDamage(damageAmount);
     }
 }

@@ -383,6 +383,7 @@ GameObject:
   - component: {fileID: 5144589612819359629}
   - component: {fileID: 2084554390683528939}
   - component: {fileID: 3105993849011471837}
+  - component: {fileID: 3613082785728900574}
   m_Layer: 3
   m_Name: Enemy1_Sprite
   m_TagString: Enemy
@@ -523,7 +524,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7497768005962106830}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -558,7 +559,7 @@ MonoBehaviour:
   waypointB: {fileID: 5419354686606870451}
   moveSpeed: 4
   arrivalRadius: 0.15
-  damageAmount: 1
+  damageAmount: 5
 --- !u!114 &3105993849011471837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,6 +593,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   invincibleTime: 0
+--- !u!114 &3613082785728900574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7497768005962106830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7489ef6a26db935459d23d7fba4f514d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeath
+  destroyDelay: 0
 --- !u!1 &7703637918340694647
 GameObject:
   m_ObjectHideFlags: 0

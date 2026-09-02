@@ -5,7 +5,7 @@ public class TrapDamage : MonoBehaviour
     public int damageAmount = 1;
     public string targetTag = "Player";
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag(targetTag))
         {

@@ -45,15 +45,13 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    /*
     public void ShowGameOver() 
     {
-        if (gameOverPanel != null) gameOverPanel.SetActive(true);
+        if (GameOverPanel != null) GameOverPanel.SetActive(true);
     }
 
     public void ShowVictory()
     {
-        if (victoryPanel != null) victoryPanel.SetActive(true);
+        if (VictoryPanel != null) VictoryPanel.SetActive(true);
     } 
-    */
 }
