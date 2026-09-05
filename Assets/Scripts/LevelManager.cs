@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Unity.Cinemachine;
+using Unity.VisualScripting;
 
 public class LevelManager : MonoBehaviour
 {
@@ -67,8 +68,20 @@ public class LevelManager : MonoBehaviour
         player.SetActive(true);
 
         var rb = player.GetComponent<Rigidbody2D>();
-        if (rb != null)
-            rb.linearVelocity = Vector2.zero;
+        if (rb != null) rb.linearVelocity = Vector2.zero;
+
+        var controller = player.GetComponent<PlayerController>();
+        if (controller != null) controller.enabled = true;
+
+        var attack = player.GetComponent<PlayerAttack>();
+        if (attack != null) attack.enabled = true;
+
+        // Health System
+        var health = player.GetComponent<HealthSystem>();
+        if (health != null) health.ResetHealth();
+
+        var death = player.GetComponent<PlayerDeath>();
+        if (death != null) death.ResetState();
 
         if (Checkpoint.hasCheckpoint)
         {
