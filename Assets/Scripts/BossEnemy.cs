@@ -14,6 +14,7 @@ public class BossEnemy : MonoBehaviour
     public float chaseSpeed = 4.5f;
     public float returnSpeed = 2.5f;
     public float arrivalRadius = 0.15f;
+    public float stopChaseDistance = 0.5f;
 
     [Header("Wait")]
     public float waitTime = 2f;
@@ -106,6 +107,12 @@ public class BossEnemy : MonoBehaviour
             return;
         }
         
+        if (dist <= stopChaseDistance)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
         MoveTowards(playerTarget.position, chaseSpeed);
     }
 

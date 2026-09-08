@@ -339,13 +339,14 @@ MonoBehaviour:
   chaseSpeed: 7.5
   returnSpeed: 5
   arrivalRadius: 0.15
+  stopChaseDistance: 0.5
   waitTime: 2
   detectionRadius: 10
   loseRadius: 12
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
-  damageAmount: 1
+  damageAmount: 10
   detectionDistance: 0.5
   wallLayer:
     serializedVersion: 2

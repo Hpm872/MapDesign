@@ -1137,7 +1137,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1473213471
   m_SortingLayer: 4
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.72375566, g: 1, b: 0.6650944, a: 1}
@@ -1911,6 +1911,7 @@ GameObject:
   - component: {fileID: 1246421864}
   - component: {fileID: 1246421863}
   - component: {fileID: 1246421862}
+  - component: {fileID: 1246421865}
   m_Layer: 5
   m_Name: RetryButton
   m_TagString: Untagged
@@ -1981,7 +1982,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1246421863}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1246421863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2020,6 +2033,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246421860}
   m_CullTransparentMesh: 1
+--- !u!114 &1246421865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246421860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b7e14f2216ab541aa897c239bb4dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RetryLevelButton
 --- !u!1 &1252337611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2865,6 +2890,7 @@ GameObject:
   - component: {fileID: 2053430471}
   - component: {fileID: 2053430473}
   - component: {fileID: 2053430474}
+  - component: {fileID: 2053430475}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -3113,6 +3139,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
   attack: {fileID: 852365928}
   gameCamera: {fileID: 519420031}
+--- !u!114 &2053430475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053430462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6f5b9689563ea409b19fb9a495f12f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDeath
+  scriptsToDisable:
+  - {fileID: 2053430467}
+  - {fileID: 2053430474}
 --- !u!1 &2060853125
 GameObject:
   m_ObjectHideFlags: 0
