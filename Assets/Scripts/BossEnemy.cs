@@ -138,7 +138,7 @@ public class BossEnemy : MonoBehaviour
         if (dir.x < -0.01f) sr.flipX = true;
     }
 
-    void OnCollisionEnter2D(Collision2D other)
+    void OnCollisionStay2D(Collision2D other)
     {
         if (!other.gameObject.CompareTag("Player")) return;
 

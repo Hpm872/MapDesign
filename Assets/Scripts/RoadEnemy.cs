@@ -58,11 +58,11 @@ public class RoadEnemy : MonoBehaviour
         }
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    void OnCollisionStay2D(Collision2D other)
     {
-        if (!other.CompareTag("Player")) return;
+        if (!other.gameObject.CompareTag("Player")) return;
 
-        var dmg = other.GetComponent<IDamageable>();
+        var dmg = other.gameObject.GetComponent<HealthSystem>();
         if (dmg != null) dmg.TakeDamage(damageAmount);
     }
 }

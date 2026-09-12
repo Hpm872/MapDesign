@@ -13,8 +13,8 @@ public class WaiterEnemy : MonoBehaviour
     [Header("Pause")]
     public float waitTime = 1.5f;
 
-    // [Header("Damage")]
-    // public int damageAmount = 1;
+    [Header("Damage")]
+    public int damageAmount = 1;
 
     private bool goingToB = true;
     private float waitTimer = 0f;
@@ -58,5 +58,13 @@ public class WaiterEnemy : MonoBehaviour
             isWaiting = true;
             waitTimer = waitTime;
         }
+    }
+
+    void OnCollisionStay2D(Collision2D other)
+    {
+        if (!other.gameObject.CompareTag("Player")) return;
+
+        var dmg = other.gameObject.GetComponent<HealthSystem>();
+        if (dmg != null) dmg.TakeDamage(damageAmount);
     }
 }

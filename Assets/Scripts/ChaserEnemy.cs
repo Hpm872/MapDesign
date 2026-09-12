@@ -39,7 +39,7 @@ public class ChaserEnemy : MonoBehaviour
         if (isChasing) ChasePlayer(); else ReturnToOrigin();
     }
 
-    private void DetectPlayer()
+    void DetectPlayer()
     {
         Collider2D hit = Physics2D.OverlapCircle(transform.position, detectionRadius, playerLayer);
         if (hit != null)
@@ -58,7 +58,7 @@ public class ChaserEnemy : MonoBehaviour
         }
     }
 
-    private void ChasePlayer()
+    void ChasePlayer()
     {
         if (playerTarget == null) return;
 
@@ -69,7 +69,7 @@ public class ChaserEnemy : MonoBehaviour
         if (dir.x < -0.01f) sr.flipX = true;
     }
 
-    private void ReturnToOrigin()
+    void ReturnToOrigin()
     {
         float dist = Vector2.Distance(transform.position, originPosition);
         if (dist < 0.01f)
@@ -82,15 +82,15 @@ public class ChaserEnemy : MonoBehaviour
         rb.linearVelocity = dir * returnSpeed;
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    void OnCollisionStay2D(Collision2D other)
     {
-        if (!other.CompareTag("Player")) return;
+        if (!other.gameObject.CompareTag("Player")) return;
 
-        var dmg = other.GetComponent<IDamageable>();
+        var dmg = other.gameObject.GetComponent<HealthSystem>();
         if (dmg != null) dmg.TakeDamage(damageAmount);
     }
 
-    private void OnDrawGizmosSelected()
+    void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
