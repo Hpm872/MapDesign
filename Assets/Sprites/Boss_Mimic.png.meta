@@ -1,0 +1,1014 @@
+fileFormatVersion: 2
+guid: 6264ddb44dbe19343b103820bf791d3a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7562376946028359742
+    second: Boss_Mimic_0
+  - first:
+      213: -4429951128134076026
+    second: Boss_Mimic_1
+  - first:
+      213: -468731100022376943
+    second: Boss_Mimic_2
+  - first:
+      213: -7177587547522112630
+    second: Boss_Mimic_3
+  - first:
+      213: 3167719125574441648
+    second: Boss_Mimic_4
+  - first:
+      213: 6034543126890039181
+    second: Boss_Mimic_5
+  - first:
+      213: -8312693556905734948
+    second: Boss_Mimic_6
+  - first:
+      213: 7092994351341921831
+    second: Boss_Mimic_7
+  - first:
+      213: -8393485454211817729
+    second: Boss_Mimic_8
+  - first:
+      213: 7466481890128995715
+    second: Boss_Mimic_9
+  - first:
+      213: 3027225558137998884
+    second: Boss_Mimic_10
+  - first:
+      213: -8222840580017739690
+    second: Boss_Mimic_11
+  - first:
+      213: 4448079684341187318
+    second: Boss_Mimic_12
+  - first:
+      213: -2486685133314379766
+    second: Boss_Mimic_13
+  - first:
+      213: -1774966918042596011
+    second: Boss_Mimic_14
+  - first:
+      213: 8903979262169396120
+    second: Boss_Mimic_15
+  - first:
+      213: -5475728691017675511
+    second: Boss_Mimic_16
+  - first:
+      213: 8954125884680303308
+    second: Boss_Mimic_17
+  - first:
+      213: 989964339243519787
+    second: Boss_Mimic_18
+  - first:
+      213: 6345103946407280911
+    second: Boss_Mimic_19
+  - first:
+      213: 2631391162489155916
+    second: Boss_Mimic_20
+  - first:
+      213: 7772526485873584951
+    second: Boss_Mimic_21
+  - first:
+      213: 9077464811888375858
+    second: Boss_Mimic_22
+  - first:
+      213: 1024017794998885763
+    second: Boss_Mimic_23
+  - first:
+      213: 1184624213745981809
+    second: Boss_Mimic_24
+  - first:
+      213: -3935351208524045972
+    second: Boss_Mimic_25
+  - first:
+      213: 3038072613375084769
+    second: Boss_Mimic_26
+  - first:
+      213: -4326058384391844703
+    second: Boss_Mimic_27
+  - first:
+      213: 6626185791941788880
+    second: Boss_Mimic_28
+  - first:
+      213: -4755897265742381281
+    second: Boss_Mimic_29
+  - first:
+      213: -2183138817770943564
+    second: Boss_Mimic_30
+  - first:
+      213: -2924563634734816089
+    second: Boss_Mimic_31
+  - first:
+      213: 2661824033815061677
+    second: Boss_Mimic_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss_Mimic_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 463
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf406a1c3a0d0790800000000000000
+      internalID: -7562376946028359742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 463
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6893a3b7be6a582c0800000000000000
+      internalID: -4429951128134076026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 463
+        width: 48
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116fcf74c8bbe79f0800000000000000
+      internalID: -468731100022376943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 463
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a836dad6726146c90800000000000000
+      internalID: -7177587547522112630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_4
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 463
+        width: 48
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba531ce2cff5fb20800000000000000
+      internalID: 3167719125574441648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_5
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 407
+        width: 53
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d874e0460010fb350800000000000000
+      internalID: 6034543126890039181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 409
+        width: 53
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc84f5a04163ac80800000000000000
+      internalID: -8312693556905734948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_7
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 410
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726669148c06f6260800000000000000
+      internalID: 7092994351341921831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_8
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 409
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffedb423379548b80800000000000000
+      internalID: -8393485454211817729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_9
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 399
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 385a60f48b54e9760800000000000000
+      internalID: 7466481890128995715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 335
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e8ccf2b9dd20a20800000000000000
+      internalID: 3027225558137998884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_11
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 335
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65820671f0a92ed80800000000000000
+      internalID: -8222840580017739690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_12
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 335
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f2c9cde7e0cabd30800000000000000
+      internalID: 4448079684341187318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_13
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 335
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a003d88db058d7dd0800000000000000
+      internalID: -2486685133314379766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_14
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 335
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d40020efc0e57e0800000000000000
+      internalID: -1774966918042596011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_15
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 306
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8933d01b6f9419b70800000000000000
+      internalID: 8903979262169396120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_16
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 282
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d0a7564cd4204b0800000000000000
+      internalID: -5475728691017675511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_17
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 267
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc2ff761d02734c70800000000000000
+      internalID: 8954125884680303308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_18
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 267
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f0aec425f0dbd00800000000000000
+      internalID: 989964339243519787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_19
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 267
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f010984eb665e0850800000000000000
+      internalID: 6345103946407280911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_20
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 207
+        width: 48
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41b4411254948420800000000000000
+      internalID: 2631391162489155916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_21
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 207
+        width: 53
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b6fc588af8ddb60800000000000000
+      internalID: 7772526485873584951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_22
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 207
+        width: 53
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238f6b5e622a9fd70800000000000000
+      internalID: 9077464811888375858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_23
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 207
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38d569252ca063e00800000000000000
+      internalID: 1024017794998885763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 142
+        width: 57
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179d7ac2271a07010800000000000000
+      internalID: 1184624213745981809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_25
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 20
+        width: 68
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c61258d1de2d269c0800000000000000
+      internalID: -3935351208524045972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_26
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 12
+        width: 82
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8801a02f6692a20800000000000000
+      internalID: 3038072613375084769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_27
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 143
+        width: 57
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac49b0e1d0c6f3c0800000000000000
+      internalID: -4326058384391844703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_28
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 142
+        width: 72
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d44e68eed0f4fb50800000000000000
+      internalID: 6626185791941788880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_29
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 9
+        width: 57
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1f7c2772a8affdb0800000000000000
+      internalID: -4755897265742381281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_30
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 143
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb856fdfcee3b1e0800000000000000
+      internalID: -2183138817770943564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 79
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a42b948edcd967d0800000000000000
+      internalID: -2924563634734816089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Mimic_32
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 91
+        width: 50
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da4e4261bd2b0f420800000000000000
+      internalID: 2661824033815061677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Boss_Mimic_0: -7562376946028359742
+      Boss_Mimic_1: -4429951128134076026
+      Boss_Mimic_10: 3027225558137998884
+      Boss_Mimic_11: -8222840580017739690
+      Boss_Mimic_12: 4448079684341187318
+      Boss_Mimic_13: -2486685133314379766
+      Boss_Mimic_14: -1774966918042596011
+      Boss_Mimic_15: 8903979262169396120
+      Boss_Mimic_16: -5475728691017675511
+      Boss_Mimic_17: 8954125884680303308
+      Boss_Mimic_18: 989964339243519787
+      Boss_Mimic_19: 6345103946407280911
+      Boss_Mimic_2: -468731100022376943
+      Boss_Mimic_20: 2631391162489155916
+      Boss_Mimic_21: 7772526485873584951
+      Boss_Mimic_22: 9077464811888375858
+      Boss_Mimic_23: 1024017794998885763
+      Boss_Mimic_24: 1184624213745981809
+      Boss_Mimic_25: -3935351208524045972
+      Boss_Mimic_26: 3038072613375084769
+      Boss_Mimic_27: -4326058384391844703
+      Boss_Mimic_28: 6626185791941788880
+      Boss_Mimic_29: -4755897265742381281
+      Boss_Mimic_3: -7177587547522112630
+      Boss_Mimic_30: -2183138817770943564
+      Boss_Mimic_31: -2924563634734816089
+      Boss_Mimic_32: 2661824033815061677
+      Boss_Mimic_4: 3167719125574441648
+      Boss_Mimic_5: 6034543126890039181
+      Boss_Mimic_6: -8312693556905734948
+      Boss_Mimic_7: 7092994351341921831
+      Boss_Mimic_8: -8393485454211817729
+      Boss_Mimic_9: 7466481890128995715
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
