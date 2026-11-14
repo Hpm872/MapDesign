@@ -201,7 +201,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6662379308739264111}
   - component: {fileID: 2428621240185342057}
-  - component: {fileID: 169441508021844270}
+  - component: {fileID: 6845754663218261659}
+  - component: {fileID: 551901819137174405}
   - component: {fileID: 374978476206512705}
   - component: {fileID: 5086622455246035802}
   - component: {fileID: 3301776001614742185}
@@ -278,18 +279,18 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 1, g: 0.586016, b: 0, a: 1}
+  m_Sprite: {fileID: -4406078466815138935, guid: 3e0e0523172e8864687f931224cfb88f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9, y: 0.65}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!60 &169441508021844270
-PolygonCollider2D:
+--- !u!58 &6845754663218261659
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -323,21 +324,29 @@ PolygonCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.001758989, y: 0.4630245}
-      - {x: -0.38038883, y: -0.23941502}
-      - {x: 0.3979787, y: -0.24293298}
-  m_UseDelaunayMesh: 1
+  m_Radius: 0.24
+--- !u!95 &551901819137174405
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114360401764698229}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8abeaa058aeb54843b2ef0100d20ee47, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!50 &374978476206512705
 Rigidbody2D:
   serializedVersion: 5
