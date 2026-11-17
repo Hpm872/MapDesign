@@ -1199,7 +1199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AreaAttack
   damage: 5
   activeTime: 0.15
-  distanceFromPlayer: 0.5
+  distanceFromPlayer: 0
 --- !u!1 &949425013
 GameObject:
   m_ObjectHideFlags: 0

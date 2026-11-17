@@ -12,18 +12,29 @@ public class AreaAttack : MonoBehaviour
     public float activeTime = 0.15f;
 
     public float distanceFromPlayer = 0.5f;
+    public float attackCooldown = 0.2f;
 
     private CircleCollider2D hitCollider;
     private HashSet<HealthSystem> alreadyHit = new HashSet<HealthSystem>();
+    private SpriteRenderer visualRenderer;
+    private float nextAttackTime = 0f;
 
     void Awake()
     {
+        visualRenderer = GetComponent<SpriteRenderer>();
         hitCollider = GetComponent<CircleCollider2D>();
         hitCollider.enabled = false;
+
+        if (visualRenderer != null)
+        {
+            visualRenderer.enabled = false;
+        }
     }
 
     public void Aim(Vector2 direction)
     {
+        if (Time.time < nextAttackTime) return;
+        
         direction.Normalize();
 
         transform.localPosition = direction * distanceFromPlayer;
@@ -31,6 +42,8 @@ public class AreaAttack : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(0f, 0f, angle);
         Swing();
+
+        nextAttackTime = Time.time + attackCooldown;
     }
 
     public void Swing()
@@ -42,11 +55,14 @@ public class AreaAttack : MonoBehaviour
     private IEnumerator SwingRoutine() 
     {
         alreadyHit.Clear();
+
         hitCollider.enabled = true;
+        if (visualRenderer != null) visualRenderer.enabled = true;
 
         yield return new WaitForSeconds(activeTime);
 
         hitCollider.enabled = false;
+        if (visualRenderer != null) visualRenderer.enabled = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
