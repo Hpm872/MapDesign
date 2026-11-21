@@ -21,12 +21,14 @@ public class WaiterEnemy : MonoBehaviour
     private bool isWaiting = false;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -51,6 +53,17 @@ public class WaiterEnemy : MonoBehaviour
         Transform destination = goingToB ? waypointB : waypointA;
         Vector2 dir = ((Vector2)destination.position - (Vector2)transform.position).normalized;
         rb.linearVelocity = dir * moveSpeed;
+
+        if (animator != null) animator.SetBool("IsMoving", false);
+        if (animator != null)
+        {
+            animator.SetBool("IsMoving", true);
+            animator.SetFloat("MoveX", Mathf.Abs(dir.x));
+            animator.SetFloat("MoveY", dir.y);
+        }
+        
+        if (dir.x > 0.01f) sr.flipX = false;
+        else if (dir.x < -0.01f) sr.flipX = true;
 
         float dist = Vector2.Distance(transform.position, destination.position);
         if (dist < arrivalRadius)

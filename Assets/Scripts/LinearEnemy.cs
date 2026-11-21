@@ -16,11 +16,13 @@ public class LinearEnemy : MonoBehaviour
     private bool goingToB = true;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -36,6 +38,12 @@ public class LinearEnemy : MonoBehaviour
 
         float dist = Vector2.Distance(transform.position, destination.position);
         if (dist < arrivalRadius) goingToB = !goingToB;
+
+        if (animator != null)
+        {
+            animator.SetFloat("MoveX", dir.x);
+            animator.SetFloat("MoveY", dir.y);
+        }
     }
 
     void OnCollisionStay2D(Collision2D other)
