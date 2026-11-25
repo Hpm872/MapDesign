@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class WaiterEnemy : MonoBehaviour
@@ -53,21 +54,23 @@ public class WaiterEnemy : MonoBehaviour
         Transform destination = goingToB ? waypointB : waypointA;
         Vector2 dir = ((Vector2)destination.position - (Vector2)transform.position).normalized;
         rb.linearVelocity = dir * moveSpeed;
-
-        if (animator != null) animator.SetBool("IsMoving", false);
+        
         if (animator != null)
         {
             animator.SetBool("IsMoving", true);
             animator.SetFloat("MoveX", Mathf.Abs(dir.x));
             animator.SetFloat("MoveY", dir.y);
         }
+
+        sr.flipX = dir.x < 0f;
         
-        if (dir.x > 0.01f) sr.flipX = false;
-        else if (dir.x < -0.01f) sr.flipX = true;
+        // if (dir.x > 0.01f) sr.flipX = false;
+        // else if (dir.x < -0.01f) sr.flipX = true;
 
         float dist = Vector2.Distance(transform.position, destination.position);
         if (dist < arrivalRadius)
         {
+            if (animator != null) animator.SetBool("IsMoving", false);
             isWaiting = true;
             waitTimer = waitTime;
         }

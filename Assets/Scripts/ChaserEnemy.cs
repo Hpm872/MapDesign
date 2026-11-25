@@ -22,12 +22,14 @@ public class ChaserEnemy : MonoBehaviour
     private bool isChasing = false;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
         originPosition = transform.position;
     }
 
@@ -65,6 +67,8 @@ public class ChaserEnemy : MonoBehaviour
         Vector2 dir = ((Vector2)playerTarget.position - (Vector2)transform.position).normalized;
         rb.linearVelocity = dir * chaseSpeed;
 
+        animator.SetBool("IsMoving", true);
+
         if (dir.x > 0.01f) sr.flipX = false;
         if (dir.x < -0.01f) sr.flipX = true;
     }
@@ -74,6 +78,7 @@ public class ChaserEnemy : MonoBehaviour
         float dist = Vector2.Distance(transform.position, originPosition);
         if (dist < 0.01f)
         {
+            animator.SetBool("IsMoving", false);
             rb.linearVelocity = Vector2.zero;
             return;
         }
