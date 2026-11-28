@@ -7,10 +7,13 @@ public class PlayerAttack : MonoBehaviour
     public Camera gameCamera;
 
     private InputSystem_Actions inputActions;
+    private Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        animator = GetComponent<Animator>();
+
         inputActions = new InputSystem_Actions();
 
         if (gameCamera == null) gameCamera = Camera.main;
@@ -37,5 +40,14 @@ public class PlayerAttack : MonoBehaviour
 
         Vector2 direction = (Vector2)mouseWorldPos - (Vector2)transform.position;
         attack.Aim(direction);
+
+        Debug.Log("Atacando! Animator  " + animator);
+        if (animator != null)
+        {
+            Vector2 dir = direction.normalized;
+            animator.SetFloat("MoveX", dir.x);
+            animator.SetFloat("MoveY", dir.y);
+            animator.SetTrigger("Attacking");
+        }
     }
 }
